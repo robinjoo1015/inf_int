@@ -1,7 +1,5 @@
 #include "inf_int.h"
 #include <iostream>
-#include <string.h>
-#include <stdlib.h>
 
 using namespace std;
 
@@ -57,8 +55,8 @@ int main()
 	cout << "A + B = " << A + B << endl;
 	cout << "A - B = " << A - B << endl;
 	cout << "B - A = " << B - A << endl;
-	cout << "-A - B = " << (zero - A) - B << endl;
+	cout << "-A - B = " << - A - B << endl;
 	cout << "A * B = " << A * B << endl;
-	cout << "-A * B = " << (zero - A) * B << endl;
-	cout << "-A * -B = " << (zero - A) * (zero - B) << endl;
+	cout << "-A * B = " <<  - A * B << endl;
+	cout << "-A * -B = " << - A * - B << endl;
 }

@@ -278,7 +278,13 @@ inf_int operator*(const inf_int& bong1, const inf_int& bong2)
 		mul.thesign = (bong1.thesign == bong2.thesign);
 		return mul;
 	}
-	
+}
+
+inf_int operator-(const inf_int& bongbong)
+{
+	inf_int temp(bongbong);
+	temp.thesign = !bongbong.thesign;
+	return temp;
 }
 
 ostream& operator<<(ostream& out, const inf_int& bongbong)
